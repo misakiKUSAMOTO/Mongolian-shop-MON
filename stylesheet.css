@@ -1,174 +1,103 @@
-@charset "utf-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モンゴルアンテナショップ MON</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0″>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+</head>
 
-body {
-    background-color: #f3f0e8;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    min-height: 100%;
-    min-height: 100vh;
-    font-family: 'M PLUS 1p', sans-serif;
-}
+<body>
+    <header>
+        <div class = "header-container">
+            <div class = "header-logo">
+                <img src="https://www.shop-yellowdoctor-jpn.com/pic-labo/img_logo01-2.png" alt="header logo">
+            </div>
+            <div class = "header-right">
+                <div class = "header-list search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class = "header-list hamburger">
+                    <i class = "fontawesome fa fa-bars"></i>
+                </div> 
+                <div class = "header-list shopping-cart">
+                    <a href=""><i class="fas fa-shopping-cart"></i>カート</a>
+                </div>
+                <div class = "header-list language arrow">
+                    <a href=""><p>language</p></a>
+                </div>
+                <div class = "header-list about-this-brand arrow">
+                    <a href=""><p>ブランドについて</p></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-header {
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    height: 5em;
-    background-color: white;
-    color: #211000;
-}
+    <main>
+        <div class = "top">
+            <div class = "container">
+                <div class = "top-news"><h1>あったかい<br>ウール・カシミヤ製品</h1>
+                    <a href=""><div class ="box"><p>ストアを見る</p></div></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "popular-category">
+            <h1>ウィメンズ人気カテゴリー</h1>
+                <div class = "category">
+                    <div class = "category-image">
+                        <div class = "scarf">
+                            <a href=""><img src="https://github.com/misakiKUSAMOTO/Mongolian-shop-MON/blob/main/sincerely-media-WaFHxewtfPQ-unsplash.png?raw=true" alt=""></a>
+                            <div class = "box"><p>マフラー・ストール</p></div>
+                        </div>
+                    </div>
+                    <div class = "category-image">
+                        <div class = "beanie">
+                            <a href=""><img src="https://github.com/misakiKUSAMOTO/Mongolian-shop-MON/blob/main/june-andrei-george-HK5ACgiLOFc-unsplash.png?raw=true" alt=""></a>
+                            <a href=""><div class = "box"><p>帽子</p></div></a>
+                        </div>
+                    </div>
+                    <div class = "category-image">
+                        <div class = "socks">
+                            <img src="https://github.com/misakiKUSAMOTO/Mongolian-shop-MON/blob/main/146487838_o1.jpeg?raw=true" alt="">
+                            <a href=""><div class = ></div></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
-.header-container {
-    padding: 0 3em 0 3em;
-}
+        
+                    
 
-.header-logo img {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
+        
+            <!--トップ画像をスライドショーにするための仕組み。topクラスに貼る
+             <img src="https://thumbs.dreamstime.com/z/cheerful-young-couple-wearing-sweaters-scarfs-standing-isolated-over-gray-background-hugigng-136189690.jpg" id="slide_img" class="slider" />
+            <script>
+                const img_src = ["https://image.freepik.com/free-photo/cheerful-european-girl-knitted-scarf-posing-with-peace-sign-wooden-wall-indoor-shot-laughing-married-couple-having-fun-together_197531-8357.jpg", "https://github.com/misakiKUSAMOTO/Mongolian-shop-MON/blob/main/20210427-%E5%8D%88%E5%BE%8C93829.png?raw=true", "https://as2.ftcdn.net/jpg/04/25/76/55/500_F_425765529_nXkGAMS6CivAO7FhEYao8Jy4kzr0qWFT.jpg"];
+                let num = -1;
+            
+                function slide_time() {
+                    if (num === 2) {
+                    num = 0;
+                    } else {
+                    num++;
+                    }
+                    document.getElementById("slide_img").src = img_src[num];
+                }
 
-.header-list {
-    float: right;
-    line-height: 5em;
-    margin-left: 3em;
-    cursor: pointer;
-}
+                setInterval(slide_time, 5000);
+            </script> -->
+        
 
-.header-list p {
-    display: inline;
-    vertical-align: middle;
-    font-size: 1em;
-}
-
-.header-list a {
-    text-decoration: none;
-    color: #3D3634;
-}
-
-.header-list i{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 2em;
-    color: #3D3634
-}
-
-.arrow{
-    position: relative;
-}
-.arrow::after{
-    content: "";
-    position: absolute;
-    top: 2.4em;
-    border: 6px solid transparent;
-    border-top: 7px solid #3D3634;
-}
-
-.arrow :hover {
-    text-decoration: underline;
-
-}
-
-    /* ハンバーガーメニューの表示・非表示 */
-    @media screen and (min-width: 1180px) {
-        .header-right .hamburger {
-            display: none;
-        }
-    }
-    @media screen and (max-width: 1180px) {
-        .header-right .hamburger {
-            margin-right: 2em;
-        }
-        .header-list {
-            display: none;
-        }
-    }
-
-main {
-    height: 205em;
-}
-
-/* JavaScriptを使う場合のCSS 
- .top img {
-    padding: 5em 0 5em 0;
-    height: 80vh;
-    width: 100%;
-} */
-    
-.top {
-    background-image: url("https://github.com/misakiKUSAMOTO/Mongolian-shop-MON/blob/main/unsplash.png?raw=true");
-    background-size: cover;
-    padding: 10em 0 10em 0;
-    height: 50vh;
-    position: relative;
-}
+    </main>
 
 
-/* 
-【マフラー】
-カップル
-https://thumbs.dreamstime.com/z/cheerful-young-couple-wearing-sweaters-scarfs-standing-isolated-over-gray-background-hugigng-136189690.jpg
+    <footer></footer>
 
-男性
-
-https://as2.ftcdn.net/jpg/04/25/76/55/500_F_425765529_nXkGAMS6CivAO7FhEYao8Jy4kzr0qWFT.jpg
-
-https://as2.ftcdn.net/jpg/04/25/25/07/500_F_425250777_lwrQ2PwYWiZHYy5TL4KSZrPzkBtOoccQ.jpg
-https://as1.ftcdn.net/jpg/04/23/27/82/500_F_423278259_1215683zWvZz2FAiZ1qKDKQgQlfpzbLq.jpg
-
-
-
-
-女性
-
-https://as2.ftcdn.net/jpg/01/65/83/97/500_F_165839706_EkdkGb5TEQHG58EqZe548DzUX0pgi59m.jpg
-
-https://as2.ftcdn.net/jpg/01/10/92/59/500_F_110925995_B65ZgjRqJQGWGzlnh0g0Ii396zsT2xG3.jpg
-
-https://as2.ftcdn.net/jpg/02/45/54/09/500_F_245540919_wTxAwK3YNhCiC06nxEB0zgmLDsql7Rqu.jpg
-https://as2.ftcdn.net/jpg/02/45/54/09/500_F_245540951_BoO1Qom2eU68vfS6TElapqIJkHyg9MtA.jpg
-https://as1.ftcdn.net/jpg/00/98/22/68/500_F_98226827_HQ6f7zPgJwzRuc2y2EczSFVF4HxoS7pZ.jpg
-
-
-
-
-【手袋】
-https://as2.ftcdn.net/jpg/04/29/64/59/500_F_429645957_giQegLNiP2sXdvh9wj9VZUyIAUkeb2Q8.jpg
-https://as2.ftcdn.net/jpg/04/29/75/81/500_F_429758132_mTdo6y2ycu1nUc2h3pc4GrQtiDouTpn6.jpg
-
-https://as1.ftcdn.net/jpg/02/96/62/78/500_F_296627898_wPuIPSOiYvRh5KULdoaU8NN25bH5VgqH.jpg
-https://as1.ftcdn.net/jpg/02/98/74/80/500_F_298748074_fMAXQ211LR4wZpHMRKZKncZGSJ4Wetg9.jpg
-
-
-
-
-
-【靴下】
-
-https://t3.ftcdn.net/jpg/03/07/39/78/240_F_307397801_2AxDpBFvVLPhTgXIaJeBDZWb81C0cjMU.jpg
-https://t3.ftcdn.net/jpg/01/26/65/38/240_F_126653844_xWGv4AtkbvguBZqPVsfGsAnetkv0BZ2z.jpg
-https://t3.ftcdn.net/jpg/01/90/50/72/240_F_190507276_wwwcGSX3ivqJKdcxtgEhk6nruSIekLdX.jpg
-
-https://as1.ftcdn.net/jpg/02/29/37/82/500_F_229378282_XperzKB1JYNvotjXxXcwGjDHNdqdEPzc.jpg
-https://as1.ftcdn.net/jpg/01/26/65/38/500_F_126653844_xWGv4AtkbvguBZqPVsfGsAnetkv0BZ2z.jpg
-
-https://as1.ftcdn.net/jpg/02/96/98/44/500_F_296984483_qgZn1BkXJBqYAPslyLDR4rL3yESRHlXx.jpg
-https://as1.ftcdn.net/jpg/03/90/96/18/500_F_390961855_4uXvcNH7wVBGaKUfv2PbhvmRKAqclh4g.jpg
-
-男性靴下
-https://as1.ftcdn.net/jpg/03/95/79/16/500_F_395791690_3zRMeFYQ1jIoH1bfQRbSGbGdKG7aAOj4.jpg
-https://as1.ftcdn.net/jpg/02/64/69/90/500_F_264699034_f92EhrZXZTqPVuIFx8sY2QjfHiqzxlgS.jpg
-
-
-【帽子
-https://as1.ftcdn.net/jpg/03/83/62/26/500_F_383622610_sS6PJMr4RSmDJDZgF2S0TsnjMKLfiV3R.jpg
-https://as1.ftcdn.net/jpg/00/50/42/20/500_F_50422021_DDn8NeNQ8l72ybbxbGTEeNqelMd21zv5.jpg
-
-https://as1.ftcdn.net/jpg/02/17/06/78/500_F_217067855_V8qS2JTAaCwTkoahmlyp73aaQ89vIqje.jpg
-https://as2.ftcdn.net/jpg/01/81/28/01/500_F_181280198_4d2O8OpnLhJmHcAJH9lXMmhtT6cqvVlp.jpg
-*/
-
-
-
-
+</body>
+</html>
